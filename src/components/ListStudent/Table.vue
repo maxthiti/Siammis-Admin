@@ -30,9 +30,9 @@
                         <div class="flex flex-wrap gap-2 text-sm mt-2">
                             <span class="badge badge-primary badge-sm">{{ student.grade }}</span>
                             <span class="badge badge-outline badge-sm">ห้อง {{ student.room }}</span>
-                            <span class="badge badge-sm font-semibold" :class="getScoreBadgeClass(student.score)">
+                            <!-- <span class="badge badge-sm font-semibold" :class="getScoreBadgeClass(student.score)">
                                 คะแนน {{ getScoreDisplay(student.score) }}
-                            </span>
+                            </span> -->
                         </div>
                         <div class="flex flex-col gap-2 mt-2">
                             <div>
@@ -95,7 +95,7 @@
                             <th class="bg-primary text-primary-content hidden sm:table-cell">รหัสนักเรียน</th>
                             <th class="bg-primary text-primary-content">ระดับชั้น</th>
                             <th class="bg-primary text-primary-content hidden md:table-cell">ห้อง</th>
-                            <th class="bg-primary text-primary-content text-center">คะแนน</th>
+                            <!-- <th class="bg-primary text-primary-content text-center">คะแนน</th> -->
                             <th class="bg-primary text-primary-content text-center">สถานะ</th>
                             <th class="bg-primary text-primary-content text-center">
                                 จัดการ</th>
@@ -141,11 +141,11 @@
                                 <span class="badge badge-primary badge-sm">{{ student.grade }}</span>
                             </td>
                             <td class="hidden md:table-cell">{{ student.room }}</td>
-                            <td class="text-center">
+                            <!-- <td class="text-center">
                                 <span class="badge badge-sm font-semibold" :class="getScoreBadgeClass(student.score)">
                                     {{ getScoreDisplay(student.score) }}
                                 </span>
-                            </td>
+                            </td> -->
                             <td class="text-center">
                                 <template v-if="auth.user?.role !== 'viewer' && auth.user?.role !== 'discipline'">
                                     <button class="btn btn-ghost btn-xs"

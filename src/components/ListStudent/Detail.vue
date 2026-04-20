@@ -19,7 +19,7 @@
                     <div class="font-bold text-lg">{{ student.name }}</div>
                     <div class="text-sm text-base-content/70">รหัส: {{ studentCode }}</div>
                     <div class="text-sm">ระดับชั้น: {{ student.grade }} ห้อง {{ studentRoom }}</div>
-                    <div class="mt-1">
+                    <!-- <div class="mt-1">
                         <button v-if="canOpenConduct" type="button" class="badge badge-sm font-semibold cursor-pointer"
                             :class="getScoreBadgeClass(studentScore)" @click="goToConduct"
                             title="ไปหน้าบันทึกพฤติกรรมของนักเรียนคนนี้">
@@ -28,7 +28,7 @@
                         <span v-else class="badge badge-sm font-semibold" :class="getScoreBadgeClass(studentScore)">
                             คะแนน {{ studentScore }}
                         </span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="mb-2 font-semibold flex items-center gap-2">

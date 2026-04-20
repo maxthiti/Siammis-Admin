@@ -190,7 +190,7 @@
                     </ul>
                 </li>
 
-                <li v-if="auth.user?.role !== 'viewer'">
+                <!-- <li v-if="auth.user?.role !== 'viewer'">
                     <div @click="toggleBehaviorMenu"
                         class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-base-200 transition-colors cursor-pointer relative group"
                         :class="{ 'bg-primary text-primary-content': isBehaviorMenuActive }">
@@ -239,7 +239,7 @@
                             </router-link>
                         </li>
                     </ul>
-                </li>
+                </li> -->
 
                 <li v-if="auth.user?.role !== 'teacher' && auth.user?.role !== 'discipline'">
                     <div @click="toggleEquipment"
@@ -364,7 +364,7 @@
                                 <span>สแกนไม่สำเร็จ</span>
                             </router-link>
                         </li>
-                        <li>
+                        <!-- <li>
                             <router-link to="/home/report/at-risk"
                                 class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-base-200 transition-colors text-sm"
                                 :class="submenuClass('/home/report/at-risk')">
@@ -375,7 +375,7 @@
                                 </svg>
                                 <span>พฤติกรรมเสี่ยง</span>
                             </router-link>
-                        </li>
+                        </li> -->
                         <li>
                             <router-link to="/home/report/stats"
                                 class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-base-200 transition-colors text-sm"
