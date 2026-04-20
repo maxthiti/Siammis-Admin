@@ -133,8 +133,6 @@
 
 <script setup>
 import { ref, watch } from 'vue'
-
-const emit = defineEmits(['student-selected', 'conduct-saved'])
 import { StudentService } from '../../api/student.js'
 import { ConductService } from '../../api/conduct.js'
 import { BehaviorService } from '../../api/behavior.js'
@@ -146,7 +144,7 @@ const studentService = new StudentService()
 const conductService = new ConductService()
 const behaviorService = new BehaviorService()
 const meritService = new MeritService()
-
+const emit = defineEmits(['student-selected', 'conduct-saved'])
 const searchStudentIdText = ref('')
 const searchStudentNameText = ref('')
 const studentIdResults = ref([])
